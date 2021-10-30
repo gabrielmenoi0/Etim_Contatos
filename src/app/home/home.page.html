@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     Lista de contatos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-list>
+      <ion-item *ngFor="let contato of contatos" (click)="seleciona(contato)">
+        <h2>{{contato.nome}}</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
